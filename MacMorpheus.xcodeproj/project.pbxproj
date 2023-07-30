@@ -14,6 +14,10 @@
 		1FEF0B371DBA175A00DCCEB9 /* EyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF0B301DBA175A00DCCEB9 /* EyeView.m */; };
 		1FEF0B381DBA175A00DCCEB9 /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF0B321DBA175A00DCCEB9 /* VideoPlayerView.m */; };
 		1FEF0B391DBA175A00DCCEB9 /* PSVR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF0B341DBA175A00DCCEB9 /* PSVR.m */; };
+		C6D2DC092A7638F700CD0289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2DC082A7638F700CD0289 /* AppDelegate.swift */; };
+		C6D2DC0B2A7639D500CD0289 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2DC0A2A7639D500CD0289 /* VideoPlayerView.swift */; };
+		C6D2DC0D2A7639DB00CD0289 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2DC0C2A7639DB00CD0289 /* EyeView.swift */; };
+		C6D2DC0F2A7639E100CD0289 /* PSVR.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2DC0E2A7639E100CD0289 /* PSVR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,11 @@
 		1FEF0B321DBA175A00DCCEB9 /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
 		1FEF0B331DBA175A00DCCEB9 /* PSVR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSVR.h; sourceTree = "<group>"; };
 		1FEF0B341DBA175A00DCCEB9 /* PSVR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSVR.m; sourceTree = "<group>"; };
+		C6D2DC072A7638F700CD0289 /* MacMorpheus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacMorpheus-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6D2DC082A7638F700CD0289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6D2DC0A2A7639D500CD0289 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		C6D2DC0C2A7639DB00CD0289 /* EyeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
+		C6D2DC0E2A7639E100CD0289 /* PSVR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSVR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +73,21 @@
 			children = (
 				1FEF0B1E1DBA16FB00DCCEB9 /* AppDelegate.h */,
 				1FEF0B1F1DBA16FB00DCCEB9 /* AppDelegate.m */,
+				C6D2DC082A7638F700CD0289 /* AppDelegate.swift */,
 				1FEF0B2F1DBA175A00DCCEB9 /* EyeView.h */,
 				1FEF0B301DBA175A00DCCEB9 /* EyeView.m */,
+				C6D2DC0C2A7639DB00CD0289 /* EyeView.swift */,
 				1FEF0B311DBA175A00DCCEB9 /* VideoPlayerView.h */,
 				1FEF0B321DBA175A00DCCEB9 /* VideoPlayerView.m */,
+				C6D2DC0A2A7639D500CD0289 /* VideoPlayerView.swift */,
 				1FEF0B331DBA175A00DCCEB9 /* PSVR.h */,
 				1FEF0B341DBA175A00DCCEB9 /* PSVR.m */,
+				C6D2DC0E2A7639E100CD0289 /* PSVR.swift */,
 				1FEF0B241DBA16FB00DCCEB9 /* Assets.xcassets */,
 				1FEF0B261DBA16FB00DCCEB9 /* MainMenu.xib */,
 				1FEF0B291DBA16FB00DCCEB9 /* Info.plist */,
 				1FEF0B211DBA16FB00DCCEB9 /* Supporting Files */,
+				C6D2DC072A7638F700CD0289 /* MacMorpheus-Bridging-Header.h */,
 			);
 			path = MacMorpheus;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 				TargetAttributes = {
 					1FEF0B1A1DBA16FB00DCCEB9 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 1500;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,6 +141,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -156,11 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D2DC092A7638F700CD0289 /* AppDelegate.swift in Sources */,
 				1FEF0B391DBA175A00DCCEB9 /* PSVR.m in Sources */,
 				1FEF0B231DBA16FB00DCCEB9 /* main.m in Sources */,
 				1FEF0B201DBA16FB00DCCEB9 /* AppDelegate.m in Sources */,
 				1FEF0B371DBA175A00DCCEB9 /* EyeView.m in Sources */,
 				1FEF0B381DBA175A00DCCEB9 /* VideoPlayerView.m in Sources */,
+				C6D2DC0B2A7639D500CD0289 /* VideoPlayerView.swift in Sources */,
+				C6D2DC0F2A7639E100CD0289 /* PSVR.swift in Sources */,
+				C6D2DC0D2A7639DB00CD0289 /* EyeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +289,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacMorpheus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = emoRaivis.MacMorpheus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MacMorpheus/MacMorpheus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -282,12 +306,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacMorpheus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = emoRaivis.MacMorpheus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MacMorpheus/MacMorpheus-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
